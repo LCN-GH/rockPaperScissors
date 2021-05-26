@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+
+  <title>Rock, Paper, Scissors</title>
+</head>
+
+<body class="preload">
+  <div class="container">
+    <header class="header">
+      <img src="./images/logo.svg" alt="Logo" class="logo">
+      <div class="score">
+        <div class="scoreTitle">Score</div>
+        <div class="scoreNumber">0</div>
+      </div>
+    </header>
+
+    <section class="game">
+
+      <button class="choiceBtn" data-choice="paper">
+        <div class="choice paper">
+          <img src="./images/icon-paper.svg" alt="Paper">
+        </div>
+      </button>
+      <button class="choiceBtn" data-choice="scissors">
+        <div class="choice scissors">
+          <img src="./images/icon-scissors.svg" alt="Scissors">
+        </div>
+      </button>
+      <button class="choiceBtn" data-choice="rock">
+        <div class="choice rock">
+          <img src="./images/icon-rock.svg" alt="Rock">
+        </div>
+      </button>
+    </section>
+  </div>
+
+  <section class="results hidden">
+    <h2 class="resultsHeading">you picked</h2>
+    <h2 class="resultsHeading">the house picked</h2>
+    <div class="resultsResult"></div>
+    <div class="resultsWinner hidden">
+      <h3 class="resultsText"></h3>
+      <button class="playAgain">play again</button>
+    </div>
+    <div class="resultsResult"></div>
+  </section>
+
+  <button class="rulesBtn" tabindex="1">rules</button>
+  <div class="modal">
+    <div class="modalContainer">
+      <header class="modalHeader">
+        <h2 class="modalHeading">rules</h2>
+        <button class="closeBtn">
+          <img src="./images/icon-close.svg" alt="Close Button">
+        </button>
+      </header>
+      <img src="./images/image-rules.svg" alt="Rules Image" class="rulesImage">
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">LCN</a>.
+    </div>
+  </footer>
+</body>
+
+</html>
